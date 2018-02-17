@@ -26,7 +26,6 @@ pipeline {
     // Add different test suites as different stages in your pipeline
     // Stages can also run on specific nodes if needed
 
-    milestone label: 'prod'
     stage("Deploy") {
         // Build the docker container and ship it!
       echo 'This will be the external deploy'

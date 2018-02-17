@@ -5,7 +5,7 @@ import java.util.stream.*;
 
 public class TodoDao {
 
-    private static final List<Todo> DATA = new ArrayList<>();
+    private static final List<Todo> DATA = new ArrayList<Todo>();
 
     public static void add(Todo todo) {
         DATA.add(todo);

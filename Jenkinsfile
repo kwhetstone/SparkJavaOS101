@@ -1,6 +1,6 @@
 pipeline {
   // You can also use docker agents by specifying:  docker "image-from-dockerhub"
-  agent { label 'home' }
+  agent { label 'croissant' }
   // This is a tool preconfigured in Jenkins.  Just enable and name from your configuration screen 
   tools { maven 'M3' }
   stages {

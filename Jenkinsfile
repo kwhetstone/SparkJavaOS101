@@ -6,14 +6,14 @@ pipeline {
   stages {
     stage("Build") {
       steps {
-        bat 'mvn clean compile'
+        sh 'mvn clean compile'
       }
     }
 
     stage("Test") {
       steps {
         echo "Run the tests; this could potentially be pulled together into one maven command; breaking up"
-        bat 'mvn test package'
+        sh 'mvn test package'
         junit '**/target/surefire-reports/TEST-*.xml'
         archive 'target/*.jar'
       }
